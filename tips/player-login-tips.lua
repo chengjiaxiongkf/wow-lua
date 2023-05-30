@@ -1,5 +1,5 @@
 --来源：https://www.cnblogs.com/CE-Z/p/4847381.html
-print(">>Script: Player Log Message.")
+print(">>Script: player-login-tips.lua")
 local TEAM_ALLIANCE=0
 local TEAM_HORDE=1
 --CLASS                    职业

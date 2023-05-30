@@ -7,7 +7,7 @@
     来源：https://www.cnblogs.com/CE-Z/p/4847379.html
 ]]--
 
-print(">>Script: Teleport stone.")
+print(">>Script: super-hearthstone.lua")
 --54844
 --菜单所有者 --默认炉石
 local itemEntry    =6948

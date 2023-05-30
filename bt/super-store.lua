@@ -1,4 +1,4 @@
-print(">>Script: Multilua Vendor NPC loaded.")
+print(">>Script: super-store.lua")
 
 --[[
         此eluna脚本在默认AZ端点击任意商人出售列表会导致worldserver.exe崩溃，需要以下操作：
