@@ -101,12 +101,12 @@ function ST.SummonNPC(player, entry)
                 end
                 local NPC=player:SpawnCreature(entry,x,y,z,0, 3,ST.TIME*1000)
                 if(NPC)then
-                    player:SendAreaTriggerMessage("召唤随身商人成功。")
+                    player:SendAreaTriggerMessage("召唤皮皮成功。")
                     NPC:SetFacingToObject(player)
-                    NPC:SendUnitSay(string.format("%s,你好，需要点什么？",player:GetName()),0)
+                    NPC:SendUnitSay(string.format("%s,你好,需要点什么,",player:GetName()),0)
                     lastTime=os.time()+ST.TIME
                 else
-                    player:SendAreaTriggerMessage("召唤随身商人失败。")
+                    player:SendAreaTriggerMessage("召唤皮皮失败。")
                 end
             end
         else
@@ -274,7 +274,7 @@ local Menu={
         {MENU, "其他功能",        MMENU+0x10,        GOSSIP_ICON_INTERACT_1},
         {MENU, "双重附魔",        ENCMENU,        GOSSIP_ICON_TABARD},
         {FUNC, "解除副本绑定",     Stone.UnBind,    GOSSIP_ICON_INTERACT_1, false,"是否解除所有副本绑定 ?"},
-        {FUNC, "召唤随身商人",     ST.SummonGNPC,    GOSSIP_ICON_MONEY_BAG},
+        {FUNC, "召唤皮皮",     ST.SummonGNPC,    GOSSIP_ICON_MONEY_BAG},
         --{FUNC, "附魔大师NPC",    ST.SummonENPC,    GOSSIP_ICON_TABARD},
         {MENU, "职业技能训练师",MMENU+0x20,        GOSSIP_ICON_BATTLE},
         {MENU, "专业技能训练师",MMENU+0x30,        GOSSIP_ICON_BATTLE},
